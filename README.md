@@ -1,2 +1,5 @@
-# MemLock_flutter
-Istinye University Student Projects.
+# flutter_app
+
+A new Flutter project.
+
+bunlari değiştirmek gerekli.
