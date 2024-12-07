@@ -1,4 +1,4 @@
-name: flutter_app
+name: memlock_flutter
 description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
@@ -7,11 +7,13 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
-  cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  cupertino_icons: ^1.0.8
+  dotlottie_loader: ^0.0.4
   go_router: ^14.6.1
   shared_preferences: ^2.3.3
+  lottie: ^2.3.2 # En güncel sürümü kontrol edin
 
 dev_dependencies:
   flutter_test:
@@ -20,11 +22,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-    assets:
+  assets:
     - assets/images/
     - assets/icons/
     - assets/languages/
     - assets/motions/
-    
-
-
