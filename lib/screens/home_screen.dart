@@ -6,6 +6,9 @@ import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:memlock_flutter/screens/loading_screen.dart';
 
+import '../core/contants.dart';
+import '../widgets/bottom_menu.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
