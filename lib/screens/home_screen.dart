@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
-import 'package:memlock_flutter/screens/loading_screen.dart';
+import 'package:screens/loading_screen.dart';
 
 import '../core/contants.dart';
 import '../widgets/bottom_menu.dart';
@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
                     size: 60,
                     color: Color.fromARGB(255, 4, 23, 83),
                   ),
-                  const SizedBox(height: 10),
+                  const Sized.Box(height: 10),
                 ],
               ),
             ),
