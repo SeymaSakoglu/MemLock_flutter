@@ -1,14 +1,14 @@
-//uygulamada sayfalari ve navigasyon islemlerini burada tanimlicaz
-import 'package:flutter/material.dart';
+
+// uygulamada sayfalari ve navigasyon islemlerini burada tanimlicaz
 import 'package:go_router/go_router.dart';
-import 'package:memlock_flutter/screens/profile_screen.dart';
-import 'package:memlock_flutter/screens/memory_screen.dart';
-import 'package:memlock_flutter/screens/voice_screen.dart';
+import '../screens/history_screen.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
+import '../screens/login_screen.dart';
 import '../screens/profile_screen.dart';
+import '../screens/register_screen.dart';
 import '../screens/search_screen.dart';
-import '../screens/memory_screen.dart';
+import '../screens/setting_scree.dart';
 import '../screens/voice_screen.dart';
 
 // Router yapılandırması
@@ -17,27 +17,66 @@ final router = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const LoadingScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const LoadingScreen(),
+      ),
     ),
     GoRoute(
       path: '/home',
-      builder: (context, state) => const HomeScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const HomeScreen(),
+      ),
     ),
     GoRoute(
       path: '/profile',
-      builder: (context, state) => const ProfileScreen(),
-    ),
-    GoRoute(
-      path: '/search',
-      builder: (context, state) => const SearchScreen(),
-    ),
-    GoRoute(
-      path: '/memory',
-      builder: (context, state) => const MemoryScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const ProfileScreen(),
+      ),
     ),
     GoRoute(
       path: '/voice',
-      builder: (context, state) => const VoiceScreen(),
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const VoiceScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/login',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const LoginScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/settings',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const SettingsScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/register',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const RegisterScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/search',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const SearchScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/history',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const HistoryScreen(),
+      ),
     ),
   ],
 );

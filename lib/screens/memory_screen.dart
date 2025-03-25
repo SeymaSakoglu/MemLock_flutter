@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../core/contants.dart';
+import '../core/constants.dart';
+import '../core/themes.dart';
 import '../widgets/bottom_menu.dart';
 
 class MemoryScreen extends StatelessWidget {
@@ -8,11 +9,11 @@ class MemoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: arkaPlanRengim ,
-      body: Center(
+      backgroundColor: colors["surface"] ,
+      body: const Center(
         child: Text("Anilar Ekranim"),
       ),
-      bottomNavigationBar: BottomMenu(),
+      bottomNavigationBar: const BottomMenu(),
     );
   }
 }

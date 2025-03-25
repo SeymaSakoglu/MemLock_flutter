@@ -14,6 +14,8 @@ dependencies:
   go_router: ^14.6.1
   shared_preferences: ^2.3.3
   lottie: ^2.3.2 # En güncel sürümü kontrol edin
+  google_fonts: ^6.2.1
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:memlock_flutter/widgets/bottom_menu.dart';
 
-import '../core/contants.dart';
+import '../core/constants.dart';
+import '../core/themes.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -9,11 +10,11 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: arkaPlanRengim ,
-      body: Center(
+      backgroundColor: colors["surface"] ,
+      body: const Center(
         child: Text("Arama Ekranim"),
       ),
-      bottomNavigationBar: BottomMenu(),
+      bottomNavigationBar: const BottomMenu(),
     );
   }
 }

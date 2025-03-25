@@ -1,11 +1,14 @@
 //acilis ekranimiz buraya gelecek
 import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
+// ignore: unnecessary_import
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 
-import '../core/contants.dart';
+import '../core/constants.dart';
+import '../core/themes.dart';
 
 class LoadingScreen extends StatelessWidget {
   const LoadingScreen({super.key});
@@ -13,14 +16,14 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: arkaPlanRengim ,
+      backgroundColor: colors["surface"] ,
       body: SizedBox.expand(
         //width: double.infinity,
         child: Column(
           children: [
             // Logo bölümü
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: 200,
                 height: 200,
                 child: Image.asset(
@@ -51,7 +54,7 @@ class LoadingScreen extends StatelessWidget {
             ),
 
             //bosluk bırakmak lazım :)
-            SizedBox(
+            const SizedBox(
               height: 20,
             )
           ],
